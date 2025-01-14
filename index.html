@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar el Número</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¡Adivina el número entre 1 y 50!</h1>
+        <p>Introduce un número entre 1 y 50 y el juego te dirá si es mayor o menor que el número secreto.</p>
+        
+        <div id="informacion-del-juego">
+            <p>Intentos restantes: <span id="intentos-restantes">5</span></p>
+            <p>Puntaje: <span id="puntaje">0</span></p>
+        </div>
+
+        <input type="number" id="entradaUsuario" min="1" max="50" placeholder="Introduce un número" />
+        <button id="botonAdivinar">¡Adivinar!</button>
+        <button id="botonReiniciar" style="display: none;">Reiniciar Juego</button>
+
+        <p id="mensaje"></p>
+
+        <h3>Historial de intentos:</h3>
+        <ul id="historial"></ul>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
