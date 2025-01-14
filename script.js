@@ -69,7 +69,7 @@ function finalizarJuego() {
 // Función para reiniciar el juego
 botonReiniciar.addEventListener('click', function() {
     numeroSecreto = Math.floor(Math.random() * 50) + 1;
-    intentos = 5;
+    intentos = 10;
     puntajeActual = 0;
     intentosPrevios = [];
     intentosRestantes.textContent = intentos;
@@ -80,3 +80,21 @@ botonReiniciar.addEventListener('click', function() {
     botonReiniciar.style.display = 'none';
     entradaUsuario.value = '';
 });
+
+//Funcion para que el texto <h3 id="nombreautor">Nombre del Autor: Pau</h3> salga destacado
+// const nombreAutor = document.getElementById('nombreautor');
+// nombreAutor.style.color = "blue";
+// nombreAutor.style.fontSize = "20px";
+// nombreAutor.style.fontWeight = "bold";
+// nombreAutor.style.textAlign = "center";
+// nombreAutor.style.fontFamily = "Arial";
+// nombreAutor.style.textDecoration = "underline";
+
+//Funcion para que el botonReiniciar salga destacado
+// botonReiniciar.style.backgroundColor = "red";
+// botonReiniciar.style.color = "white";
+// botonReiniciar.style.border = "none";
+// botonReiniciar.style.padding = "10px 20px";
+// botonReiniciar.style.fontSize = "16px";
+
+
